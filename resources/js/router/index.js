@@ -9,8 +9,18 @@ const routes = [
         children: [
             {
                 path: '/',
-                name: 'dashboard',
-                component: () => import('../views/Dashboard.vue')
+                name: 'products',
+                component: () => import('../views/Products.vue')
+            },
+            {
+                path: '/suppliers',
+                name: 'suppliers',
+                component: () => import('../views/Suppliers.vue')
+            },
+            {
+                path: '/purchase-orders',
+                name: 'purchase-orders',
+                component: () => import('../views/PurchaseOrders.vue')
             },
         ]
     },

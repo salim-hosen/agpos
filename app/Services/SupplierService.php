@@ -16,7 +16,7 @@ class SupplierService
         }
 
         // Paginate results
-        return $query->paginate(15);  // 15 items per page, can be changed
+        return $query->paginate(request('per_page', 10));  // 10 items per page, can be changed
     }
 
     public function createSupplier(array $data)
