@@ -38,12 +38,17 @@ Ensure you have the following installed:
    php artisan migrate
    ```
 
-6. **Start the backend server**
+6. **Build the frontend**
+   ```sh
+   npm run build
+   ```
+
+7. **Start the backend server**
    ```sh
    php artisan serve
    ```
 
-7. **Start Vite development server (optional, if using Vite)**
+8. **Start Vite development server (optional, if using Vite)**
    ```sh
    npm run dev
    ```
