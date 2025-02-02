@@ -13,7 +13,7 @@ Route::apiResource('suppliers', SupplierController::class);
 Route::apiResource('purchases', PurchaseController::class);
 // Route::apiResource('purchases', PurchaseController::class)->only(['index', 'store']);
 Route::apiResource('purchase-items', PurchaseItemController::class);
-Route::apiResource('supplier-ledgers', SupplierLedgerController::class);
+// Route::apiResource('supplier-ledgers', SupplierLedgerController::class);
 
 // Route::get('suppliers/{supplier}/ledger', [SupplierLedgerController::class, 'show']);
 Route::post('ledger/purchase', [SupplierLedgerController::class, 'addPurchaseLedgerEntry']);

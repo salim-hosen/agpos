@@ -19,7 +19,7 @@ class PurchaseService
 
     public function getPurchaseOrders()
     {
-        return Purchase::with('supplier')->get();
+        return Purchase::with(['supplier', 'items.product'])->paginate(request('per_page', 15));
     }
 
     public function createPurchase(array $data)
@@ -32,7 +32,7 @@ class PurchaseService
             $purchase = Purchase::create([
                 'supplier_id' => $data['supplier_id'],
                 'total_amount' => 0, // Set the total amount later
-                'purchase_date' => $data['purchase_date'],
+                'purchase_date' => date('Y-m-d'),
             ]);
 
             $totalAmount = 0;

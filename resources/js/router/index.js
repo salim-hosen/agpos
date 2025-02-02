@@ -22,6 +22,11 @@ const routes = [
                 name: 'purchase-orders',
                 component: () => import('../views/PurchaseOrders.vue')
             },
+            {
+                path: '/create-purchase',
+                name: 'create-purchase',
+                component: () => import('../views/CreatePurchase.vue')
+            },
         ]
     },
 ];

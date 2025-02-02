@@ -107,6 +107,7 @@ onMounted(fetchProducts);
       <!-- <Column field="category" header="Category"></Column> -->
       <Column field="price" header="Price"></Column>
       <Column field="initial_stock_quantity" header="Initital Stock Qty"></Column>
+      <Column field="current_stock_quantity" header="Current Stock Qty"></Column>
       <Column header="Actions">
         <template #body="slotProps">
           <Button icon="pi pi-pencil" class="p-button-sm p-button-warning mr-2" @click="openDialog(slotProps.data)" />
